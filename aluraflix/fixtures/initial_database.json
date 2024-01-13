@@ -1,0 +1,84 @@
+[
+    {
+      "model": "aluraflix.video",
+      "pk": 1,
+      "fields": {
+        "title": "Histórias do Quartel 20 Soldado Bisonho e Capitão!",
+        "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+        "url": "https://www.youtube.com/watch?v=ihh3iKxNZ-o"
+        }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 2,
+        "fields": {
+          "title": "Histórias do Quartel 21 Acampamento do CFC",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=9XgjeoZ0cc8"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 3,
+        "fields": {
+          "title": "Histórias do Quartel 22 \"Promoção a Cabo, moita plotado!\"",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=JW0USuMGR7U"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 4,
+        "fields": {
+          "title": "Histórias do Quartel 24 \"Serviço com alteração: munição sumiu, Capitão e Bisonho saem da cadeia\"",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=qhQsf2wU_KM"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 5,
+        "fields": {
+          "title": "História do Quartel a série: Bisonho recepciona o General",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=PgAt62ykrEg"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 6,
+        "fields": {
+          "title": "História do Quartel a série: Capitão Bisonho, General de plantão... Bisonho e Capitão!",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=2M6BeIQ9fnk"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 7,
+        "fields": {
+          "title": "Histórias do Quartel a série \"Soldado Bisonho Cb Sincero, subtenência e Parada diária\"",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=l5P-YRGrVZc"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 8,
+        "fields": {
+          "title": "Histórias do Quartel 20 Soldado Bisonho e Capitão!",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=l5P-YRGrVZc"
+          }
+    },
+    {
+        "model": "aluraflix.video",
+        "pk": 9,
+        "fields": {
+          "title": "Histórias do Quartel \"Bisonho é puxado de serviço, missão cortar mato e entrega do dispositivo!\"",
+          "description": "A Série Animada 1ª Temporada Completa - Comopode?",
+          "url": "https://www.youtube.com/watch?v=x-yqUScx09E"
+          }
+    }
+
+]
