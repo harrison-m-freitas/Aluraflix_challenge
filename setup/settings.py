@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)+qmi*nv4-2&yea6(3u51v2y8hn2c)d1m(bl#-r(=4ftvi^byp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_filters",
     "rest_framework_simplejwt",
+    "drf_yasg",
     # Internal Apps
     "aluraflix"
 ]
@@ -136,5 +137,3 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
-
-LOGIN_URL = '/admin/login'
