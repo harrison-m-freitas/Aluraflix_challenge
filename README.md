@@ -17,7 +17,7 @@ Este é um projeto Django que implementa uma API REST para gerenciamento de víd
 
 ## Instalação
 
-1. Clone o repositório: `git clone <URL_DO_REPOSITORIO>`
+1. Clone o repositório: `git clone [<REPOSITORIO>](https://github.com/harrison-m-freitas/Aluraflix_challenge.git)`
 2. Instale as dependências: `pip install -r requirements.txt`
 3. Execute as migrações: `python manage.py migrate`
 4. Execute o servidor: `python manage.py runserver`
