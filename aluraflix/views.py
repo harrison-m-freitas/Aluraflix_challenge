@@ -20,11 +20,6 @@ class VideoViewSet(viewsets.ModelViewSet):
         serializer = VideoSerializer(queryset, many=True)
         return Response(status=status.HTTP_200_OK,  data=serializer.data)
     
-    @action(detail=True, renderer_classes=[renderers.StaticHTMLRenderer])
-    def highlight(self, request, *args, **kwargs):
-        snippet = self.get_object()
-        return Response(snippet.description)
-    
     def destroy(self, request, *args, **kwargs):
         video = self.get_object()
         v_title = video.title[:25] + (video.title[:25] and ("..."))
