@@ -17,13 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from aluraflix.views import VideoViewSet
+from aluraflix.views import VideoViewSet, CategoryViewSet, VideoCategoryViewSet
 
 router = routers.DefaultRouter()
 router.register("videos",  VideoViewSet, basename="videos")
+#router.register("videos/free", FreeVideoViewSet, basename="free-videos")
+router.register("categories",  CategoryViewSet, basename="categories")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include(router.urls))
+    path("", include(router.urls)),
+    path("categories/<int:pk>/videos/", VideoCategoryViewSet.as_view()),
+    path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]

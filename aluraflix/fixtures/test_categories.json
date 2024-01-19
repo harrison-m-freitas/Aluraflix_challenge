@@ -1,0 +1,34 @@
+[
+    {
+        "model": "aluraflix.category",
+        "pk": 2,
+        "fields": {
+          "title": "GAMES",
+          "color": "RED"
+          }
+    },
+    {
+        "model": "aluraflix.category",
+        "pk": 3,
+        "fields": {
+          "title": "MOVIES",
+          "color": "GRAY"
+          }
+    },
+    {
+        "model": "aluraflix.category",
+        "pk": 4,
+        "fields": {
+          "title": "SERIES",
+          "color": "BLUE"
+          }
+    },
+    {
+        "model": "aluraflix.category",
+        "pk": 5,
+        "fields": {
+          "title": "ANIMES",
+          "color": "ORANGE"
+          }
+    }
+]

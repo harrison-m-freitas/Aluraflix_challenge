@@ -29,7 +29,7 @@ class VideoTest(TestCase):
         self.assertEqual(len(response.json()), 9)
         
     def test_get_video_details(self):
-        """Testing get resquest all videos"""
+        """Testing get resquest one video details"""
         
         response = self.client.get(self.video.get_absolute_url())
         
@@ -39,6 +39,13 @@ class VideoTest(TestCase):
         self.assertEqual(data_json["title"], self.video.title)
         self.assertEqual(data_json["description"], self.video.description)
         self.assertEqual(data_json["url"], self.video.url)
+        
+    def test_get_video_search(self):
+        """Testing get resquest video filter search"""
+        response = self.client.get(self.list_url, data={"search":"Soldado"})
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.json()), 3)
         
     def test_add_video(self):
         """Testing post request to add video"""
@@ -54,7 +61,11 @@ class VideoTest(TestCase):
         
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         data_json = response.json()
-        self.assertDictEqual(data_json, video)
+
+        self.assertEqual(data_json['title'], video['title'])
+        self.assertEqual(data_json['description'], video['description'])
+        self.assertEqual(data_json['url'], video['url'])
+        self.assertEqual(data_json['category_id'], 1)
 
     def test_update_partial_video_details(self):
         """Testing patch request to update partial details"""

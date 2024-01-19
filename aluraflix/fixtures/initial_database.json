@@ -1,5 +1,13 @@
 [
     {
+      "model": "aluraflix.category",
+      "pk": 1,
+      "fields": {
+        "title": "LIVRE",
+        "color": "White"
+        }
+    },
+    {
       "model": "aluraflix.video",
       "pk": 1,
       "fields": {
